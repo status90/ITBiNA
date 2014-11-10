@@ -1,7 +1,7 @@
 <?php
     try
     {
-        $connection = mysql_connect("31.170.160.76","a6422285_itbina","itbina123");
+        $connection = mysql_connect("http://mysql2.000webhost.com","a6422285_itbina","itbina123");
         mysql_select_db("a6422285_itbina", $connection);
         // Note: You need to verify the data coming in isn't harmful, this SQL pretty much puts anything into the database so make sure to change this!
         $postTitle = mysql_real_escape_string($_POST[postTitle]);
