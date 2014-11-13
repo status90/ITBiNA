@@ -33,7 +33,7 @@
  
                 $.ajax({
                     type: "POST",
-                    url: "newannouncement.php",
+                    url: "http://http://itbina360.net46.net/newannouncement.php",
                     cache: false,
                     data: formData,
                     success: onSuccess
