@@ -1,8 +1,8 @@
 <?php
     try {
-	    $server = "mysql2.000webhost.com";
-	    $username = "a6422285_itbina";
-	    $password = "itbina123";
+	$server = "mysql2.000webhost.com";
+	$username = "a6422285_itbina";
+	$password = "itbina123";
     	$database = "a6422285_itbina";
 
     	$con = mysql_connect($server, $username, $password) or die ("Could not connect: " . mysql_error());
@@ -17,7 +17,7 @@
     	mysql_close($con);
     	echo "success";
 	}
-	catch(Exception $e)
+    catch(Exception $e)
 	{
     	echo $e->getMessage();
 	}
