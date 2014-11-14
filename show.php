@@ -8,7 +8,7 @@
 		$con = mysql_connect($server, $username, $password) or die ("Could not connect: " . mysql_error());
 		mysql_select_db($database, $con);
 
-		$sql = "SELECT * FROM posts ORDER BY post_date DESC";
+		$sql = "SELECT * FROM posts ORDER BY post_id DESC";
 		$result = mysql_query($sql) or die ("Query error: " . mysql_error());
 	
 		while($row = mysql_fetch_array($result)) {
