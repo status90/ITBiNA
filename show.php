@@ -12,7 +12,8 @@
 		$result = mysql_query($sql) or die ("Query error: " . mysql_error());
 	
 		while($row = mysql_fetch_array($result)) {
-			echo "<h4>Title: ".$row['post_title']."</h4><p>".$row['post_content']."</p><p>".$row['post_date']."</p><hr>";
+			            
+			echo "<div data-role='collapsible' data-inset='false'><h4>Title: ".$row['post_title']."</h4><p>".$row['post_content']."</p><p>".$row['post_date']."</p><hr><div>";
 		}
 
 		mysql_close($con);
