@@ -12,7 +12,7 @@
 		$result = mysql_query($sql) or die ("Query error: " . mysql_error());
 	
 		while($row = mysql_fetch_array($result)) {
-			echo "<li><h4>Title: ".$row['post_title']."</h4>".$row['post_content']."<p class='ui-li-aside'>".$row['post_date']."</p><hr>";
+			echo "<h4>Title: ".$row['post_title']."</h4>".$row['post_content']."<p>".$row['post_date']."</p><hr>";
 		}
 
 		mysql_close($con);
