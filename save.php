@@ -16,6 +16,13 @@ try {
 	
 	mysql_close($con);
 	echo "success";
+	
+	require("instapush.class.php");
+	$ip = new instapush();
+	$ip->App('546a4938a4c48a6131a7a0c0', '170f764836e7462e61613bed4d4b5f9c');
+	$ip->Event('announce');
+	$ip->trackers('title',$_POST['post_title'],'comment',$_POST['post_content']);
+	$ip->Push();
 	}
 catch(Exception $e)
 	{
